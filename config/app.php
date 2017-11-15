@@ -171,15 +171,18 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
+        By\Otc\Providers\AppServiceProvider::class,
+        By\Otc\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        By\Otc\Providers\EventServiceProvider::class,
+        By\Otc\Providers\RouteServiceProvider::class,
 
 
 
         Zizaco\Entrust\EntrustServiceProvider::class,
+
+        Barryvdh\Cors\ServiceProvider::class,
+
 
 
     ],
